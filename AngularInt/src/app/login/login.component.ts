@@ -89,6 +89,13 @@ export class LoginComponent implements OnInit{
       ref.componentInstance.btn = 'Send OTP';
       ref.componentInstance.type = 'reset';
     }
+
+    openVerifyEmailModal(): void {
+      const ref = this.modalService.open(PopupModalComponent, { centered: true });
+      ref.componentInstance.title = 'Verify email';
+      ref.componentInstance.btn = 'Send Link';
+      ref.componentInstance.type = 'verify';
+    }
     // eventDisplay(event) {
     //   this.display = 'none';
     // }

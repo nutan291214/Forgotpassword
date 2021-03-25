@@ -121,6 +121,8 @@ export class PopupModalComponent implements OnInit {
         }
       );
     }
+
+    
     // clearValues() {
     //   this.successMsg = null;
     //   this.errorMsg = null;
